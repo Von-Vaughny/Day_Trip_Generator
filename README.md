@@ -1,1 +1,1 @@
-# Day_Trip_Generator
+# day_trip_generator
