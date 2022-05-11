@@ -120,7 +120,13 @@ def get_entertainment():
 
 # Function to get random name from current list. // CONSIDER using shuffle and subscripting based on length of list and counter
 # for get_destination(), get_restaurant(), get_transportation() and get_entertainment() or using numpy as np to create an array
-# and subscript. Need to load numpy module.
+# and subscript. Need to load numpy module, try:
+#
+# def get_random_value(current_list, n=0)
+#     np.random.permutation(current_list)
+#     random_item = current_list[n]
+#     if n == len(current):
+#         n = 0
 def get_random_value(current_list,):
     return random.choice(current_list)
 
