@@ -87,9 +87,8 @@ def get_initial_values():
 
 # Function to select destination.
 def get_destination():
-    n = 0
     while len(selected_names) == 0:
-        random_destination = get_random_value(destinations, n)
+        random_destination = get_random_value(destinations)
         question = f"Destination: Would you like to visit {random_destination}? (Type n, y, no, yes): "
         evaluate_user_input(random_destination, "destination", question, input(question).lower())
 
@@ -127,7 +126,7 @@ def get_entertainment():
 #     random_item = current_list[n]
 #     if n == len(current):
 #         n = 0
-def get_random_value(current_list,):
+def get_random_value(current_list):
     return random.choice(current_list)
 
 
